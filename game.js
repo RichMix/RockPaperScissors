@@ -28,3 +28,6 @@ function playGame(playerSelection) {
     result.textContent = "You lose!";
   }
 }
+
+
+// Choppscripty //
