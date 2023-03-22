@@ -1,20 +1,21 @@
- <!DOCTYPE html>
- <html lang="en" dir="ltr">
-<head>
-    <meta charset="utf-8">
-    <title> Rock, Paper, Scissors </title>
-</head>
-<body>
-    <h1>Rock Paper Scissors</h1>
-    <p> Choose Your Weapon</p>
-        <!--<h2>Computer Choice:<span id="COmputer Choice"></span></h2>
-        <h2>User Choice:<span id="User Choice"></span></h2>
-        <h2>Result:<span id="Result"></span></h2>-->
-        
-    <button id="Rock">Rock</button>
-    <button id="Paper">Paper</button>
-    <button id="Scissors">Scissors</button>
-    <p id="result"></p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css" integrity="sha512-UZi4nZ4A8I+Gfo7xtydeTfsTswyitTpkW8d/kKq3Y1a+sXKFxFfJl8Ov1Kcz0t/2+OyUl0z56muEHJmLm+CDbQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container mx-auto flex flex-col items-center justify-center min-h-screen">
+      <h1 class="text-3xl font-bold mb-8">Rock Paper Scissors Pickle</h1>
+      <div class="flex items-center justify-center mb-8">
+        <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-l-md focus:outline-none" id="Rock">Rock</button>
+        <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-none focus:outline-none" id="Paper">Paper</button>
+        <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-r-md focus:outline-none" id="Scissors">Scissors</button>
+      </div>
+      <p class="text-2xl font-bold" id="result"></p>
+    </div>
     <script src="app.js" charset="utf-8"></script>
-</body>
+  </body>
 </html>
