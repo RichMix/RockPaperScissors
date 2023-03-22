@@ -1,21 +1,6 @@
-/* Set the background color to a light gray */
+/* Set the background color to black */
 body {
-  background-color: black;
-}
-
-/* Add a background image */
-body::before {
-  content: '';
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: none;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-color: #000000;
 }
 
 /* Style the container for the game */
@@ -26,6 +11,8 @@ body::before {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   max-width: 640px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 /* Style the heading */
@@ -33,12 +20,14 @@ h1 {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 2rem;
+  color: #black;
+  text-align: center;
 }
 
 /* Style the buttons */
 button {
-  background-color: yellow;
-  color: red;
+  background-color: #fff;
+  color: #000;
   font-size: 1.5rem;
   font-weight: bold;
   padding: 1rem 2rem;
@@ -48,6 +37,7 @@ button {
 
 button:hover {
   background-color: #ff7f50;
+  color: #fff;
   cursor: pointer;
 }
 
