@@ -1,39 +1,73 @@
-/* Set the background color to a light gray */
 body {
-    background-color: #ff9400;
-    background-image: linear-gradient(to bottom, #ff4d4d 50%, rgba(0, 0, 0, 0) 50%);
+  background-color: #ff9400;
+  background-image: linear-gradient(to top, #ff4d4d 50%, rgba(0, 0, 0, 0) 50%);
+  background-size: 100% 100%;
+  animation: pixelate 8s linear infinite;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+}
+
+@keyframes pixelate {
+  0%, 20% {
     background-size: 100% 100%;
-    animation: pixelate 8s linear infinite;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
   }
-  
-  @keyframes pixelate {
-    0%, 20% {
-      background-size: 100% 100%;
-    }
-    30%, 50% {
-      background-size: 20px 20px;
-    }
-    60%, 80% {
-      background-size: 100% 100%;
-    }
-    90%, 100% {
-      background-size: 20px 20px;
-    }
+  30%, 50% {
+    background-size: 20px 20px;
   }
-  
-  
-  /* Style the container for the game */
-  .container {
-    background-color: #ffffff;
-    padding: 2rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    max-width: 640px;
-    margin: 0 auto;
+  60%, 80% {
+    background-size: 100% 100%;
   }
-  
+  90%, 100% {
+    background-size: 20px 20px;
+  }
+}
+
+
+/* Style the container for the game */
+.container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* Style the heading */
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+/* Style the buttons */
+button {
+  background-color: #yellow;
+  color: #red;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+}
+
+button:hover {
+  background-color: #ff7f50;
+  cursor: pointer;
+}
+
+/* Style the result text */
+p {
+  margin-top: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  text-stroke: 5px #000;
+  -webkit-text-stroke: 1px #000; /* For Safari */
+}
   /* Style the heading */
   h1 {
     font-size: 3rem;
